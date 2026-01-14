@@ -8,9 +8,9 @@ const Right = ({deleteNote,notes}) => {
               <div key={note.id} className="flex justify-between flex-col h-72 w-60 text-black rounded bg-cover px-4 py-8 pb-4 bg-[url(https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png)] ">
                 <div className="overflow-hidden">
                   <h2 className="whitespace-nowrap overflow-x-auto text-2xl font-bold ">{note.title}</h2>
-                <div className="text-gray-600 border px-2 py-1 font-medium mt-3 max-h-39 overflow-y-auto no-scrollbar wrap-break-words">{note.content}</div>
+                <div className="text-gray-900 border-solid border border-gray-800 px-2 py-1 font-medium mt-3 max-h-39 overflow-y-auto no-scrollbar wrap-break-words">{note.content}</div>
                 </div>
-                <button className="active:scale-85 w-2/3 self-center rounded font-bold  bg-red-600 cursor-pointer text-white" onClick={()=>{
+                <button className="active:scale-90 w-2/3 self-center rounded font-bold  bg-red-600 cursor-pointer text-white" onClick={()=>{
                   deleteNote(note.id)
                 }}>Delete Note</button>
               </div>

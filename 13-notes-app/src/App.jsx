@@ -25,7 +25,7 @@ const App = () => {
 
 
   return (
-    <div className="transition-all duration-200 ease-in-out flex lg:flex-row flex-col gap-15 min-h-screen lg:h-screen bg-gray-800 text-white lg:p-10 p-5">
+    <div className="transition-all duration-200 ease-in-out flex lg:flex-row flex-col gap-12 min-h-screen lg:h-screen bg-gray-900 text-white lg:p-10 p-5">
       <Left addNote={addNote}/>
       <Right deleteNote={deleteNote} notes={notes} />
     </div>
