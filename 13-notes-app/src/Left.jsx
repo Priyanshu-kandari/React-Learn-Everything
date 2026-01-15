@@ -9,6 +9,9 @@ const Left = (props) => {
     e.preventDefault()
     if(!title && !content) return
     props.addNote({id:Date.now(),title,content})
+
+    setTitle("")
+    setContent("")
         }
 
   return (
